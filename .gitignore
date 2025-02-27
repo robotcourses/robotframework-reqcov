@@ -1,0 +1,6 @@
+*coverage_report.html
+*log.html
+*output.xml
+*report.html
+*.pyc
+poetry.lock

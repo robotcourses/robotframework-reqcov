@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "robotframework-reqcov"
+version = "0.1.0"
+description = ""
+authors = ["Robot Courses <git@robotcourses.com.br>"]
+license = "License :: OSI Approved :: Apache Software License"
+readme = "README.md"
+packages = [
+    {include = "RobotRequirementsCovarege"}
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Operating System :: OS Independent",
+    'Topic :: Software Development :: Quality Assurance',
+    "Topic :: Software Development :: Testing",
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3.8',
+    'Framework :: Robot Framework',
+    'Framework :: Robot Framework :: Library',
+]
+
+[tool.poetry.urls]
+"Github" = "https://github.com/robotcourses/robotframework-reqcov"
+"Bugs Tracker" = "https://github.com/robotcourses/robotframework-reqcov/issues"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+robotframework = "^7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
