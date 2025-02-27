@@ -1,15 +1,17 @@
 # Robot Framework Requirement Coverage
 
-O **Robot Framework Requirement Coverage** é um projeto para realização analise de cobertura de requisito para automações de testes criados com Robot Framework.
+O **Robot Framework Requirement Coverage** é uma biblioteca Ouvinte para realização de analise de cobertura de requisito para automações de testes criados com Robot Framework 7.x.
 
-## Tecnologias Utilizadas
+## Compatibilidade
 
 -  [Robot Framework 7.0](https://pypi.org/project/robotframework/7.0/)
 -  [Python 3](https://www.python.org/)
--  [Poetry](https://python-poetry.org/)
 
 
 # Analise de Cobertura de Requisito
+Por se tratar de um ouvinte, e não uma biblioteca de keywords, não é necessário instancia-la no seu projeto. De forma automatica e baseada nas tags presentes nos Test Cases e em uma CSV com os requisitos, o relatório será gerada.
+
+
 Para que isso seja possível, é necessário incluir em um arquivo `*.csv` os requisitos que serão analisados.
 
 ```  csv
