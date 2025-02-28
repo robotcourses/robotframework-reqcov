@@ -1,7 +1,7 @@
 *** Settings ***
-Test Tags  REQ-003
+Test Tags  REQ-004
 
 *** Test Cases ***
-Scenario: Test Req 3
+Scenario: Test Req 4
 
-    Pass Execution    Hello REQ-003
+    Pass Execution    Hello REQ-004

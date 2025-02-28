@@ -1,15 +1,28 @@
-# Robot Framework Requirement Coverage
+# 1. Robot Framework Requirement Coverage
 
-- [🇺🇸 English](#English)
-- [🇧🇷 Portuguese](#Portuguese)
-- [📹 Vídeo](#video)
+- [1. Robot Framework Requirement Coverage](#1-robot-framework-requirement-coverage)
+- [2. English](#2-english)
+  - [2.1. Introduction](#21-introduction)
+  - [2.2. Features](#22-features)
+  - [2.3. Installation](#23-installation)
+  - [2.4. How to Use](#24-how-to-use)
+  - [2.5. Compatibility](#25-compatibility)
+- [3. Portuguese](#3-portuguese)
+  - [3.1. Introdução](#31-introdução)
+  - [3.2. Recursos](#32-recursos)
+  - [3.3. Instalação](#33-instalação)
+  - [3.4. Como Usar](#34-como-usar)
+  - [3.5. Compatibilidade](#35-compatibilidade)
+- [4. Video](#4-video)
 
-# 🇺🇸 English
-## Introduction
+
+
+# 2. English
+## 2.1. Introduction
 
 This listening library generates reports on requirements coverage for automated tests in the Robot Framework. The report includes:
 
-## Features
+## 2.2. Features
 
 - Identification of tested requirements through Tags
 - Generation of an HTML report coverage_report.html.
@@ -18,7 +31,7 @@ This listening library generates reports on requirements coverage for automated 
 - Visual progress bar indicating test coverage.
 - Test execution failure if the minimum coverage (if informed) is not reached.  - Indication of tested and untested requirements and number of tests per requirement
 
-## Installation
+## 2.3. Installation
 
 With pip:
 ```bash
@@ -30,66 +43,70 @@ With poetry:
 poetry add robotframework-reqcov
 ```
 
-## How to Use
+## 2.4. How to Use
 1 - Create a CSV file with the requirements, as shown in the example below:
 
 ``` csv
-ID,Description
-REQ-001,User can create account
-REQ-002,User can log in
+Requirement,Description
+REQ-001,Requirement 1
+REQ-002,Requirement 2
+REQ-003,Requirement 3
+REQ-004,Requirement 4
+REQ-005,Requirement 5
 ```
 
 2 - Add tags to the tests to track the requirements
 
 The `id` of each requirement reported in the csv file should be used as a TAG in the related tests.
 
- - Example 1:
+- Example 1:
 ```
+*** Settings ***
+Test Tags  REQ-001
+
 *** Test Cases ***
-Create Account Successfully
-[Tags] REQ-001
-Create Account user=test@test.com 
+Scenario: Test Req 1
+
+    Pass Execution    Hello REQ-001
 ```
 
 - Example 2:
 ```
-*** Settings ***
-Test Tag REQ-001
-
 *** Test Cases ***
-Create Account Successfully
-Create Account user=test@test.com 
+Scenario: Test Req 2
+    [Tags]  REQ-002
+    Pass Execution    Hello REQ-002 
 ```
 
 3 - Run the tests and generate the coverage report
 
 3.1 - Without minimum coverage
 ``` bash
-robot -d reports --listener RobotRequirementsCovarege:""requirements.csv" .
+robot -d reports --listener RobotRequirementsCovarege:requirements.csv .
 ```
 
 3.2 - With minimum coverage
 
 ``` bash
-robot -d reports --listener RobotRequirementsCovarege:""requirements.csv":60 .  
+robot -d reports --listener RobotRequirementsCovarege:requirements.csv:60 .  
 ```
 
 By default, the report file `coverage_report.html` will be added in the same directory where the Robot Framework files will be added.
 
-## Compatibility
+## 2.5. Compatibility
 
 - [Robot Framework 7.0](https://pypi.org/project/robotframework/7.0/)
 - [Python 3](https://www.python.org/)
 
 
 
-# 🇧🇷 Portuguese
-## Introdução
+# 3. Portuguese
+## 3.1. Introdução
 
 Esta biblioteca ouvinte, gera relatórios sobre cobertura de requisitos para testes automatizados no Robot Framework. O relatório inclui:
 
 
-## Recursos
+## 3.2. Recursos
 
 - Identificação dos requisitos testados por meio de Tags
 - Geração de um report HTML coverage_report.html.
@@ -99,7 +116,7 @@ Esta biblioteca ouvinte, gera relatórios sobre cobertura de requisitos para tes
 - Falha na execução dos testes caso a cobertura mínima (caso informado) não seja atingida.
 - Indicação dos requisitos testados, não testados e quantidade de testes por requisitos
 
-## Instalação
+## 3.3. Instalação
 
 Com pip:
 ```bash
@@ -111,13 +128,16 @@ Com poetry:
 poetry add robotframework-reqcov 
 ```
 
-## Como Usar
+## 3.4. Como Usar
 1 - Crie um arquivo CSV com os requisitos, conforme o exemplo abaixo:
 
 ``` csv
-ID,Descrição
-REQ-001,Usuário pode criar conta
-REQ-002,Usuário pode fazer login
+Requirement,Description
+REQ-001,Requirement 1
+REQ-002,Requirement 2
+REQ-003,Requirement 3
+REQ-004,Requirement 4
+REQ-005,Requirement 5
 ```
 
 2 - Adicionar tags nos testes para rastrear os requisitos
@@ -126,42 +146,43 @@ O `id` de cada requisito informado no arquivo csv, deverá ser utilizado como TA
 
    - Exemplo 1:
 ```
+*** Settings ***
+Test Tags  REQ-001
+
 *** Test Cases ***
-Criar Conta Com Sucesso
-    [Tags]  REQ-001
-    Criar Conta  usuario=teste@teste.com  
+Scenario: Test Req 1
+
+    Pass Execution    Hello REQ-001
 ```
 
    - Exemplo 2:
 ```
-*** Settings ***
-Test Tag  REQ-001
-
 *** Test Cases ***
-Criar Conta Com Sucesso
-    Criar Conta  usuario=teste@teste.com  
+Scenario: Test Req 2
+    [Tags]  REQ-002
+    Pass Execution    Hello REQ-002 
 ```
 
 3 - Executar os testes e gerar o relatório de cobertura
 
 3.1 - Sem cobertura mínima 
 ``` bash
-robot -d reports --listener RobotRequirementsCovarege:""requirements.csv" .
+robot -d reports --listener RobotRequirementsCovarege:requirements.csv .
 ```
 
 3.2 - Com cobertura mínima 
 
 ``` bash
-robot -d reports --listener RobotRequirementsCovarege:""requirements.csv":60 .
+robot -d reports --listener RobotRequirementsCovarege:requirements.csv:60 .
 ```
 
 Por padrão, o arquivo de report `coverage_report.html` será adicionado no mesmo diretório onde os arquivos do Robot Framework serão adicionados.
 
-## Compatibilidade
+## 3.5. Compatibilidade
 
 -  [Robot Framework 7.0](https://pypi.org/project/robotframework/7.0/)
 -  [Python 3](https://www.python.org/)
 
-# 📹 Video
+# 4. Video
 
 Veja o vídeo abaixo para mais informações / See the video below for more information:
