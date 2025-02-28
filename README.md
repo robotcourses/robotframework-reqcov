@@ -1,7 +1,7 @@
 # Robot Framework Requirement Coverage
 
-- [🇺🇸 English](#english)
-- [🇧🇷 Português](#português)
+- [🇺🇸 English](#English)
+- [🇧🇷 Português](#Português)
 
 # English
 ## Introduction
@@ -85,6 +85,7 @@ See the video below for more information:
 
 - [Robot Framework 7.0](https://pypi.org/project/robotframework/7.0/)
 - [Python 3](https://www.python.org/)
+
 
 
 # Português
