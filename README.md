@@ -4,7 +4,7 @@
 - [🇧🇷 Português](#Português)
 - [📹 Vídeo](#video)
 
-# Video
+# VideoXxx
 
 Veja o vídeo abaixo para mais informações / See the video below for more information:
 
@@ -165,3 +165,7 @@ Por padrão, o arquivo de report `coverage_report.html` será adicionado no mesm
 
 -  [Robot Framework 7.0](https://pypi.org/project/robotframework/7.0/)
 -  [Python 3](https://www.python.org/)
+
+# Video
+
+Veja o vídeo abaixo para mais informações / See the video below for more information:
