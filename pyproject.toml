@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "robotframework-reqcov"
-version = "0.1.0"
+version = "0.1.1"
 description = "Listener for generating requirement coverage reports for tests performed with Robot Framework"
 authors = ["Robot Courses <git@robotcourses.com.br>"]
 license = "License :: OSI Approved :: Apache Software License"
