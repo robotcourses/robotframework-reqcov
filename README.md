@@ -70,7 +70,8 @@ robot -d reports --listener RobotRequirementsCovarege:""requirements.csv" .
 3.2 - With minimum coverage
 
 ``` bash
-robot -d reports --listener RobotRequirementsCovarege:""requirements.csv":60 .  ```
+robot -d reports --listener RobotRequirementsCovarege:""requirements.csv":60 .  
+```
 
 By default, the report file `coverage_report.html` will be added in the same directory where the Robot Framework files will be added.
 
