@@ -1,7 +1,7 @@
 # Robot Framework Requirement Coverage
 
 - [🇺🇸 English](#English)
-- [🇧🇷 Português](#Português)
+- [🇧🇷 Português](#Portugues)
 - [📹 Vídeo](#video)
 
 # English
@@ -83,7 +83,7 @@ By default, the report file `coverage_report.html` will be added in the same dir
 
 
 
-# Português
+# Portugues
 ## Introdução
 
 Esta biblioteca ouvinte, gera relatórios sobre cobertura de requisitos para testes automatizados no Robot Framework. O relatório inclui:
