@@ -1,7 +1,7 @@
 # Robot Framework Requirement Coverage
 
-- [English](#english)
-- [Português](#portugues)
+- [🇺🇸 English](#english)
+- [🇧🇷 Português](#português)
 
 # English
 ## Introduction
@@ -86,7 +86,7 @@ See the video below for more information:
 - [Python 3](https://www.python.org/)
 
 
-# 🇧🇷 Português
+# Português
 ## Introdução
 
 Esta biblioteca ouvinte, gera relatórios sobre cobertura de requisitos para testes automatizados no Robot Framework. O relatório inclui:
