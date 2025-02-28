@@ -2,9 +2,9 @@
 
 - [🇺🇸 English](#English)
 - [🇧🇷 Português](#Português)
-- [📹 Vídeo](#vídeo)
+- [📹 Vídeo](#video)
 
-# Vídeo
+# Video
 
 Veja o vídeo abaixo para mais informações / See the video below for more information:
 
