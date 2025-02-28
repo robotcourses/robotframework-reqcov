@@ -1,7 +1,7 @@
 # Robot Framework Requirement Coverage
 
 - [🇺🇸 English](#english)
-- [🇧🇷 Português](#português)
+- [🇧🇷 Português](#portugues)
 
 # English
 ## Introduction
