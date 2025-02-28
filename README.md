@@ -60,7 +60,7 @@ REQ-005,Requirement 5
 The `id` of each requirement reported in the csv file should be used as a TAG in the related tests.
 
 - Example 1:
-```
+``` robot
 *** Settings ***
 Test Tags  REQ-001
 
@@ -71,7 +71,7 @@ Scenario: Test Req 1
 ```
 
 - Example 2:
-```
+``` robot
 *** Test Cases ***
 Scenario: Test Req 2
     [Tags]  REQ-002
@@ -145,7 +145,7 @@ REQ-005,Requirement 5
 O `id` de cada requisito informado no arquivo csv, deverá ser utilizado como TAG nos testes relacionados.
 
    - Exemplo 1:
-```
+``` robot
 *** Settings ***
 Test Tags  REQ-001
 
@@ -156,7 +156,7 @@ Scenario: Test Req 1
 ```
 
    - Exemplo 2:
-```
+``` robot
 *** Test Cases ***
 Scenario: Test Req 2
     [Tags]  REQ-002
