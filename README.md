@@ -3,7 +3,7 @@
 - [English](#english)
 - [Português](#portugues)
 
-# 🇺🇸 English
+# English
 ## Introduction
 
 This listening library generates reports on requirements coverage for automated tests in the Robot Framework. The report includes:
