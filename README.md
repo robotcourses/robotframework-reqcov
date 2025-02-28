@@ -2,7 +2,7 @@
 
 - [🇺🇸 English](#English)
 - [🇧🇷 Português](#Português)
-- [Video](#video)
+- [Vídeo](#vídeo)
 
 # English
 ## Introduction
