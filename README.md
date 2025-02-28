@@ -62,14 +62,22 @@ Criar Conta Com Sucesso
 
 3.1 - Sem cobertura mínima 
 ``` bash
-robot -d reports --listener RobotRequirementsCovarege:"."requirements.csv" .
+robot -d reports --listener RobotRequirementsCovarege:""requirements.csv" .
 ```
 
 3.2 - Com cobertura mínima 
 
 ``` bash
-robot -d reports --listener RobotRequirementsCovarege:"."requirements.csv":60 .
+robot -d reports --listener RobotRequirementsCovarege:""requirements.csv":60 .
 ```
+
+Por padrão, o arquivo de report `coverage_report.html` será adicionado no mesmo diretório onde os arquivos do Robot Framework serão adicionados.
+
+## Vídeo
+
+Veja o vídeo abaixo para mais informações:
+
+*EM BREVE*
 
 ## Compatibilidade
 
