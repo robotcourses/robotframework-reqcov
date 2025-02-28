@@ -1,10 +1,10 @@
 # Robot Framework Requirement Coverage
 
 - [🇺🇸 English](#English)
-- [🇧🇷 Português](#Portugues)
+- [🇧🇷 Portuguese](#Portuguese)
 - [📹 Vídeo](#video)
 
-# English
+# 🇺🇸 English
 ## Introduction
 
 This listening library generates reports on requirements coverage for automated tests in the Robot Framework. The report includes:
@@ -83,7 +83,7 @@ By default, the report file `coverage_report.html` will be added in the same dir
 
 
 
-# Portugues
+# 🇧🇷 Portuguese
 ## Introdução
 
 Esta biblioteca ouvinte, gera relatórios sobre cobertura de requisitos para testes automatizados no Robot Framework. O relatório inclui:
@@ -162,6 +162,6 @@ Por padrão, o arquivo de report `coverage_report.html` será adicionado no mesm
 -  [Robot Framework 7.0](https://pypi.org/project/robotframework/7.0/)
 -  [Python 3](https://www.python.org/)
 
-# Video
+# 📹 Video
 
 Veja o vídeo abaixo para mais informações / See the video below for more information:
