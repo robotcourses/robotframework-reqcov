@@ -4,10 +4,6 @@
 - [🇧🇷 Português](#Português)
 - [📹 Vídeo](#video)
 
-# VideoXxx
-
-Veja o vídeo abaixo para mais informações / See the video below for more information:
-
 # English
 ## Introduction
 
