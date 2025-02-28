@@ -1,28 +1,39 @@
 # 1. Robot Framework Requirement Coverage
 
 - [1. Robot Framework Requirement Coverage](#1-robot-framework-requirement-coverage)
-- [2. English](#2-english)
-  - [2.1. Introduction](#21-introduction)
-  - [2.2. Features](#22-features)
-  - [2.3. Installation](#23-installation)
-  - [2.4. How to Use](#24-how-to-use)
-  - [2.5. Compatibility](#25-compatibility)
-- [3. Portuguese](#3-portuguese)
-  - [3.1. Introdução](#31-introdução)
-  - [3.2. Recursos](#32-recursos)
-  - [3.3. Instalação](#33-instalação)
-  - [3.4. Como Usar](#34-como-usar)
-  - [3.5. Compatibilidade](#35-compatibilidade)
-- [4. Video](#4-video)
+- [2. Video](#2-video)
+- [3. English](#3-english)
+  - [3.1. Introduction](#31-introduction)
+  - [3.2. Features](#32-features)
+  - [3.3. Installation](#33-installation)
+  - [3.4. How to Use](#34-how-to-use)
+  - [3.5. Compatibility](#35-compatibility)
+- [4. Portugês](#4-portugês)
+  - [4.1. Introdução](#41-introdução)
+  - [4.2. Recursos](#42-recursos)
+  - [4.3. Instalação](#43-instalação)
+  - [4.4. Como Usar](#44-como-usar)
+  - [4.5. Compatibilidade](#45-compatibilidade)
 
 
+# 2. Video
 
-# 2. English
-## 2.1. Introduction
+Aprenda a usar a biblioteca assistindo ao nosso vídeo no YouTube: // 
+Learn how to use the library by watching our YouTube video:
+
+[![Cobertura de Requisitos no Robot Framework](https://img.youtube.com/vi/q9S4Y6LqZic/maxresdefault.jpg)](https://www.youtube.com/watch?v=q9S4Y6LqZic)
+
+🔗 **Clique na imagem para assistir ao vídeo.**
+
+🔗 **Click on the image to watch the video.**
+
+
+# 3. English
+## 3.1. Introduction
 
 This listening library generates reports on requirements coverage for automated tests in the Robot Framework. The report includes:
 
-## 2.2. Features
+## 3.2. Features
 
 - Identification of tested requirements through Tags
 - Generation of an HTML report coverage_report.html.
@@ -31,7 +42,7 @@ This listening library generates reports on requirements coverage for automated 
 - Visual progress bar indicating test coverage.
 - Test execution failure if the minimum coverage (if informed) is not reached.  - Indication of tested and untested requirements and number of tests per requirement
 
-## 2.3. Installation
+## 3.3. Installation
 
 With pip:
 ```bash
@@ -43,7 +54,7 @@ With poetry:
 poetry add robotframework-reqcov
 ```
 
-## 2.4. How to Use
+## 3.4. How to Use
 1 - Create a CSV file with the requirements, as shown in the example below:
 
 ``` csv
@@ -93,20 +104,20 @@ robot -d reports --listener RobotRequirementsCovarege:requirements.csv:60 .
 
 By default, the report file `coverage_report.html` will be added in the same directory where the Robot Framework files will be added.
 
-## 2.5. Compatibility
+## 3.5. Compatibility
 
 - [Robot Framework 7.0](https://pypi.org/project/robotframework/7.0/)
 - [Python 3](https://www.python.org/)
 
 
 
-# 3. Portuguese
-## 3.1. Introdução
+# 4. Portugês
+## 4.1. Introdução
 
 Esta biblioteca ouvinte, gera relatórios sobre cobertura de requisitos para testes automatizados no Robot Framework. O relatório inclui:
 
 
-## 3.2. Recursos
+## 4.2. Recursos
 
 - Identificação dos requisitos testados por meio de Tags
 - Geração de um report HTML coverage_report.html.
@@ -116,7 +127,7 @@ Esta biblioteca ouvinte, gera relatórios sobre cobertura de requisitos para tes
 - Falha na execução dos testes caso a cobertura mínima (caso informado) não seja atingida.
 - Indicação dos requisitos testados, não testados e quantidade de testes por requisitos
 
-## 3.3. Instalação
+## 4.3. Instalação
 
 Com pip:
 ```bash
@@ -128,7 +139,7 @@ Com poetry:
 poetry add robotframework-reqcov 
 ```
 
-## 3.4. Como Usar
+## 4.4. Como Usar
 1 - Crie um arquivo CSV com os requisitos, conforme o exemplo abaixo:
 
 ``` csv
@@ -178,11 +189,7 @@ robot -d reports --listener RobotRequirementsCovarege:requirements.csv:60 .
 
 Por padrão, o arquivo de report `coverage_report.html` será adicionado no mesmo diretório onde os arquivos do Robot Framework serão adicionados.
 
-## 3.5. Compatibilidade
+## 4.5. Compatibilidade
 
 -  [Robot Framework 7.0](https://pypi.org/project/robotframework/7.0/)
 -  [Python 3](https://www.python.org/)
-
-# 4. Video
-
-Veja o vídeo abaixo para mais informações / See the video below for more information:
