@@ -1,5 +1,92 @@
 # Robot Framework Requirement Coverage
 
+- [English](#english)
+- [Português](#portugues)
+
+# 🇺🇸 English
+## Introduction
+
+This listening library generates reports on requirements coverage for automated tests in the Robot Framework. The report includes:
+
+## Features
+
+- Identification of tested requirements through Tags
+- Generation of an HTML report coverage_report.html.
+- Addition of a summary in the console with analysis information
+- Support for light and dark mode (Dark Mode).
+- Visual progress bar indicating test coverage.
+- Test execution failure if the minimum coverage (if informed) is not reached.  - Indication of tested and untested requirements and number of tests per requirement
+
+## Installation
+
+With pip:
+```bash
+pip install robotframework-reqcov
+```
+
+With poetry:
+```bash
+poetry add robotframework-reqcov
+```
+
+## How to Use
+1 - Create a CSV file with the requirements, as shown in the example below:
+
+``` csv
+ID,Description
+REQ-001,User can create account
+REQ-002,User can log in
+```
+
+2 - Add tags to the tests to track the requirements
+
+The `id` of each requirement reported in the csv file should be used as a TAG in the related tests.
+
+ - Example 1:
+```
+*** Test Cases ***
+Create Account Successfully
+[Tags] REQ-001
+Create Account user=test@test.com 
+```
+
+- Example 2:
+```
+*** Settings ***
+Test Tag REQ-001
+
+*** Test Cases ***
+Create Account Successfully
+Create Account user=test@test.com 
+```
+
+3 - Run the tests and generate the coverage report
+
+3.1 - Without minimum coverage
+``` bash
+robot -d reports --listener RobotRequirementsCovarege:""requirements.csv" .
+```
+
+3.2 - With minimum coverage
+
+``` bash
+robot -d reports --listener RobotRequirementsCovarege:""requirements.csv":60 .  ```
+
+By default, the report file `coverage_report.html` will be added in the same directory where the Robot Framework files will be added.
+
+## Video
+
+See the video below for more information:
+
+*COMING SOON*
+
+## Compatibility
+
+- [Robot Framework 7.0](https://pypi.org/project/robotframework/7.0/)
+- [Python 3](https://www.python.org/)
+
+
+# 🇧🇷 Português
 ## Introdução
 
 Esta biblioteca ouvinte, gera relatórios sobre cobertura de requisitos para testes automatizados no Robot Framework. O relatório inclui:
