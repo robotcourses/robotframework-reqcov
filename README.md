@@ -2,6 +2,7 @@
 
 - [🇺🇸 English](#English)
 - [🇧🇷 Português](#Português)
+- [Video](#video)
 
 # English
 ## Introduction
@@ -74,12 +75,6 @@ robot -d reports --listener RobotRequirementsCovarege:""requirements.csv":60 .
 ```
 
 By default, the report file `coverage_report.html` will be added in the same directory where the Robot Framework files will be added.
-
-## Video
-
-See the video below for more information:
-
-*COMING SOON*
 
 ## Compatibility
 
@@ -162,15 +157,13 @@ robot -d reports --listener RobotRequirementsCovarege:""requirements.csv":60 .
 
 Por padrão, o arquivo de report `coverage_report.html` será adicionado no mesmo diretório onde os arquivos do Robot Framework serão adicionados.
 
-## Vídeo
-
-Veja o vídeo abaixo para mais informações:
-
-*EM BREVE*
-
 ## Compatibilidade
 
 -  [Robot Framework 7.0](https://pypi.org/project/robotframework/7.0/)
 -  [Python 3](https://www.python.org/)
 
+# Vídeo
 
+Veja o vídeo abaixo para mais informações / See the video below for more information:
+
+*EM BREVE*
