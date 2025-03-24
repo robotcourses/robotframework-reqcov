@@ -94,6 +94,20 @@ REPORT_HTML = """
             line-height: 20px;
             color: white;
         }
+        /* Coverage Status */
+        .covered-yes {
+            background-color: #97bd61;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .covered-no {
+            background-color: #ce3e01;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body id="report-body" class="{status-class}">

@@ -1,8 +1,8 @@
 *** Test Cases ***
 Scenario: Test Req 2
-    [Tags]  REQ-002
-    Pass Execution    Hello REQ-002
+    [Tags]  KGDD-23
+    Pass Execution    Hello KGDD-23
 
 Scenario: Test Req 3
-    [Tags]  REQ-003
-    Pass Execution    Hello REQ-003
+    [Tags]  REQD-124
+    Pass Execution    Hello REQD-124

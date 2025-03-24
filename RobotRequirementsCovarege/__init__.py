@@ -23,7 +23,7 @@ class RobotRequirementsCovarege:
 
         with open(self.requirements_file, newline='', encoding='utf-8') as csvfile:
             reader = csv.reader(csvfile)
-            next(reader)  # Pular cabeçalho
+            next(reader)    # Skip CSV header
             for row in reader:
                 self.total_requirements[row[0]] = {
                     "description": row[1],
@@ -48,9 +48,10 @@ class RobotRequirementsCovarege:
         else:
             os.makedirs(self.output_dir, exist_ok=True)
 
-        tags = attrs.tags
+        tags = set(attrs.tags)
+
         for tag in tags:
-            if tag.startswith("REQ") and tag in self.total_requirements:
+            if tag in tags:
                 self.tested_requirements.add(tag)
                 self.total_requirements[tag]["tests"] += 1  # Increment test counter
 
@@ -106,7 +107,6 @@ class RobotRequirementsCovarege:
                     print(f"{req}: {data['description']}", flush=True)
             print("-" * LINE_WIDTH)
 
-        # Corrigir a barra de progresso e a barra lateral de status
         report_content = REPORT_HTML.replace("{coverage-percent}", f"{self.coverage:.2f}")
         report_content = report_content.replace("{not-covered-percent}", f"{self.not_coverage:.2f}")
         report_content = report_content.replace("{generated-date}", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
@@ -122,7 +122,15 @@ class RobotRequirementsCovarege:
         requirements_table = ""
         for req, data in self.total_requirements.items():
             status_tested = "Yes" if req in self.tested_requirements else "No"
-            requirements_table += f"<tr><td>{req}</td><td>{data['description']}</td><td>{status_tested}</td><td>{data['tests']}</td></tr>"
+            covered_class = "covered-yes" if status_tested == "Yes" else "covered-no"
+            requirements_table += f"""
+                <tr>
+                    <td>{req}</td>
+                    <td>{data["description"]}</td>
+                    <td class="{covered_class}">{status_tested}</td>
+                    <td>{data["tests"]}</td>
+                </tr>
+                """
         
         report_content = report_content.replace("<!-- Rows will be dynamically inserted -->", requirements_table)
         
